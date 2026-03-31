@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium",
+    "price": 1500000,
+    "image": "https://i.ibb.co.com/wr3cxp1b/Virat-Kohli.webp",
+    "rating": 5.0
+  },
+  {
+    "id": 2,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "All-rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm leg-break",
+    "price": 1200000,
+    "image": "https://i.ibb.co.com/MDfP18cq/Rashid-Khan.webp",
+    "rating": 4.9
+  },
+  {
+    "id": 3,
+    "name": "Jos Buttler",
+    "country": "England",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Wicketkeeper",
+    "price": 1100000,
+    "image": "https://i.ibb.co.com/bjgyWMrt/Jos-Buttler.webp",
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "price": 1450000,
+    "image": "https://i.ibb.co.com/rRVkvkhF/Pat-Cummins.webp",
+    "rating": 5.0
+  },
+  {
+    "id": 5,
+    "name": "Taskin Ahmed Tazim",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Left-arm fast",
+    "price": 1120000,
+    "image": "https://i.ibb.co.com/GfpqjBNv/Taskin-Ahmed-Tazim.webp",
+    "rating": 4.5
+  },
+  {
+    "id": 6,
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm off-break",
+    "price": 950000,
+    "image": "https://i.ibb.co.com/0RP65TFF/Glenn-Maxwell.png",
+    "rating": 4.6
+  },
+  {
+    "id": 7,
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm fast-medium",
+    "price": 850000,
+    "image": "https://i.ibb.co.com/FqbrNRMr/Mustafizur-Rahman.webp",
+    "rating": 4.4
+  },
+  {
+    "id": 8,
+    "name": "Travis Head",
+    "country": "Australia",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm off-break",
+    "price": 900000,
+    "image": "https://i.ibb.co.com/Y4n0yjdb/Travis-Head.webp",
+    "rating": 4.8
+  },
+  {
+    "id": 9,
+    "name": "David Warner",
+    "country": "Australia",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm leg-break",
+    "price": 1000000,
+    "image": "https://i.ibb.co.com/RTKv34cb/David-Warner.png",
+    "rating": 4.6
+  },
+  {
+    "id": 10,
+    "name": "Nicholas Pooran",
+    "country": "West Indies",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Wicketkeeper",
+    "price": 980000,
+    "image": "https://i.ibb.co.com/1tm4HhY5/Nicholas-Pooran.png",
+    "rating": 4.5
+  },
+  {
+    "id": 11,
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "role": "Bowler",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm fast",
+    "price": 1150000,
+    "image": "https://i.ibb.co.com/2mLRYvg/Mitchell-Starc.avif",
+    "rating": 4.8
+  },
+  {
+    "id": 12,
+    "name": "Wanindu Hasaranga",
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm leg-break",
+    "price": 1050000,
+    "image": "https://i.ibb.co.com/9kzFPhvv/Wanindu-Hasaranga.webp",
+    "rating": 4.7
+  },
+  {
+    "id": 13,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm off-break",
+    "price": 1050000,
+    "image": "https://i.ibb.co.com/Wvdczz45/Kane-Williamson.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 14,
+    "name": "Shaheen Afridi",
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm fast",
+    "price": 1100000,
+    "image": "https://i.ibb.co.com/gb59QTWQ/Shaheen-Afridi.webp",
+    "rating": 4.9
+  },
+  {
+    "id": 15,
+    "name": "Daryl Mitchell",
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium",
+    "price": 920000,
+    "image": "https://i.ibb.co.com/GvM2rX8s/Daryl-Mitchell.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 16,
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Wicketkeeper",
+    "price": 950000,
+    "image": "https://i.ibb.co.com/XkshBvzX/Quinton-de-Kock.webp",
+    "rating": 4.6
+  }
+]

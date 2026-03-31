@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+/* Banner Image Motion Slowly */
+@theme {
+  /* Define custom keyframes */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  /* Create an utility class name for it */
+  --animate-float: float 10s ease-in-out infinite;
+}
+
+
+/* Image Fixed size */
+.img-style {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  object-position: top; /* Keeps faces visible during cropping */
+  
+}
+
+/* Selected Ima-style */
+.img-small {
+  width: 100px;
+  height: 90px;
+  object-fit: cover;
+  object-position: top;
+}
