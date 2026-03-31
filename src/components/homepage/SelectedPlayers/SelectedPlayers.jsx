@@ -12,46 +12,46 @@ const SelectedPlayers = ({ selectedPlayer, setSelectedPlayer, coin, setCoin }) =
     console.log(selectedPlayer)
 
     const handleDeleteSelectedPlayer = (player) => {
-        toast.info(
-            ({ closeToast }) => (
-            <div className="flex flex-col gap-2">
-                <p className="font-semibold">
-                Remove <span className="text-red-500">{player.name}</span> from squad?
-                </p>
+    toast.info(
+        ({ closeToast }) => (
+        <div className="flex flex-col gap-2">
+            <p className="font-semibold">
+            Remove <span className="text-red-500">{player.name}</span> from squad?
+            </p>
 
-                <div className="flex gap-2 justify-end">
-                <button
-                    className="btn btn-sm bg-gray-200"
-                    onClick={closeToast}
-                >
-                    Cancel
-                </button>
+            <div className="flex gap-2 justify-end">
+            <button
+                className="btn btn-sm bg-gray-200"
+                onClick={closeToast}
+            >
+                Cancel
+            </button>
 
-                <button
-                    className="btn btn-sm bg-red-500 text-white"
-                    onClick={() => {
-                    const filterPlayers = selectedPlayer.filter(
-                        (p) => p.name !== player.name
-                    );
+            <button
+                className="btn btn-sm bg-red-500 text-white"
+                onClick={() => {
+                const filterPlayers = selectedPlayer.filter(
+                    (p) => p.name !== player.name
+                );
 
-                    setSelectedPlayer(filterPlayers);
-                    setCoin(coin + player.price);
+                setSelectedPlayer(filterPlayers);
+                setCoin(coin + player.price);
 
-                    toast.dismiss(); // close confirm
-                    toast.error(`${player.name} removed!`);
-                    }}
-                >
-                    Yes, Remove
-                </button>
-                </div>
+                toast.dismiss(); // close confirm
+                toast.error(`${player.name} removed!`);
+                }}
+            >
+                Yes, Remove
+            </button>
             </div>
-            ),
-            {
-            autoClose: false,
-            closeOnClick: false,
-            }
-        );
-        };
+        </div>
+        ),
+        {
+        autoClose: false,
+        closeOnClick: false,
+        }
+    );
+    };
 
 
     return (
