@@ -6,24 +6,52 @@ import { CiBaseball, CiLocationOn  } from "react-icons/ci";
 import { TbSettingsSpark } from "react-icons/tb";
 import { BiSolidError } from "react-icons/bi";
 import SelectedCard from '../../ui/SelectedCard';
+import { toast } from 'react-toastify';
 
 const SelectedPlayers = ({ selectedPlayer, setSelectedPlayer, coin, setCoin }) => {
     console.log(selectedPlayer)
 
     const handleDeleteSelectedPlayer = (player) => {
-        // 1. এখানে 'player' হলো সেই অবজেক্ট যাকে আপনি ডিলিট করতে চাচ্ছেন (যে বাটনে ক্লিক করা হয়েছে)।
-        console.log("Player from handeler", player)
-        // 2. লুপে থাকা প্লেয়ারের নাম যদি ডিলিট করা প্লেয়ারের সাথে না মিলে (True), তবে সে লিস্টে থাকবে। 
-        // 3.  আর মিলে গেলে (False) সে বাদ পড়ে যাবে।
-        const filterPlayers = selectedPlayer.filter(
-            (p) => p.name !== player.name,
-        )
+        toast.info(
+            ({ closeToast }) => (
+            <div className="flex flex-col gap-2">
+                <p className="font-semibold">
+                Remove <span className="text-red-500">{player.name}</span> from squad?
+                </p>
 
-        console.log("Arter Filter", filterPlayers)
-        setSelectedPlayer(filterPlayers)
-        // coine also remove
-        setCoin(coin + player.price);
-    }
+                <div className="flex gap-2 justify-end">
+                <button
+                    className="btn btn-sm bg-gray-200"
+                    onClick={closeToast}
+                >
+                    Cancel
+                </button>
+
+                <button
+                    className="btn btn-sm bg-red-500 text-white"
+                    onClick={() => {
+                    const filterPlayers = selectedPlayer.filter(
+                        (p) => p.name !== player.name
+                    );
+
+                    setSelectedPlayer(filterPlayers);
+                    setCoin(coin + player.price);
+
+                    toast.dismiss(); // close confirm
+                    toast.error(`${player.name} removed!`);
+                    }}
+                >
+                    Yes, Remove
+                </button>
+                </div>
+            </div>
+            ),
+            {
+            autoClose: false,
+            closeOnClick: false,
+            }
+        );
+        };
 
 
     return (
